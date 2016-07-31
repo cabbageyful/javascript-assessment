@@ -211,20 +211,26 @@
 
 //  Here's a stub of a function you can use!
 
-//  function reverseString() {
-//    var msg = "Porcupines are cute";
-//
-//    // do some stuff here to reverse that string into a new variable
-//    var newMsg = "This should be the reversed string";
-//
-//    alert(newMsg);
-//  }
+ function reverseString() {
+   var msg = "Porcupines are cute";
+
+   // do some stuff here to reverse that string into a new variable
+   var reverseCreation = [];
+
+   for (var i=1; i<=msg.length; i++) {
+       reverseCreation.push(msg[msg.length - i]);
+   }
+
+   var newMsg = reverseCreation.join('');
+
+   alert(newMsg);
+ }
 
 // Here's a stub of event stuff you could use
 //
 
-//  var button = document.getElementById('reverse-string-button');
-//  button.addEventListener('click', reverseString);
+ var button = document.getElementById('reverse-string-button');
+ button.addEventListener('click', reverseString);
 </script>
 
 
