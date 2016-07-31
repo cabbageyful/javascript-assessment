@@ -263,7 +263,7 @@
   }
 
   findButton.click(hardToFind);
-  
+
 </script>
 
 <div class="hint">
@@ -292,6 +292,12 @@
 <script>
   "use strict";
   // put your code here
+  var bestPhoto = $('#kittenz-rule');
+  function changeCute () {
+    bestPhoto.attr('src', 'http://67.media.tumblr.com/1b6e04bc0dcb7feaad8263b5fb4608bf/tumblr_nz4enqvxCX1uhqudpo1_1280.jpg');
+  }
+
+  bestPhoto.dblclick(changeCute);
 </script>
 
 <div class="hint">
@@ -326,6 +332,15 @@
 <script>
   "use strict";
   // put your code here
+
+  var porcuPic = $('#cute-porcupine-image');
+  var makePorcu = $('#make-a-porcupine');
+
+  function getPorc () {
+    porcuPic.show(3000).fadeIn(4500);
+  }
+
+  makePorcu.click(getPorc);
 </script>
 
 <div class="hint">
