@@ -385,6 +385,19 @@
 <script>
   "use strict";
   // put your code here
+  
+  var copyCat = $('#agreeable-form');
+
+  var ditto = $('#agreeable-text');
+
+  function repeatUser (e) {
+    var faveFood = $('#favorite-food-input').val();
+    ditto.html('My favorite food is ' + faveFood + ' too!');
+    e.preventDefault();
+  }
+
+  copyCat.submit(repeatUser);
+
 </script>
 
 <div class="hint">
@@ -415,6 +428,7 @@
 <script>
   "use strict";
   // put your code here
+  
 </script>
 
 <div class="hint">
