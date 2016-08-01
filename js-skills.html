@@ -428,7 +428,35 @@
 <script>
   "use strict";
   // put your code here
-  
+
+  // I didn't get this code working!
+
+  var playGame = $('#play-guessing-game');
+
+  function numberGame() { 
+    var randoNumber = Math.floor((Math.random() * 100) + 1);
+
+    console.log(randoNumber);
+
+    var userGuess = parseInt(prompt('Guess a number between 1 and 100!'));
+
+    while (userGuess !== randoNumber) {
+
+      if (isNaN(userGuess)) {
+        alert('That\'s not a number! Guess again!');
+        continue;
+      } else if (userGuess > randoNumber) {
+        alert('Too high, try again!');
+      } else if (userGuess < randoNumber) {
+        alert('Too low, guess again!');
+      } else {
+      alert('Congrats, you did it!');
+      }
+    }
+  }
+
+  playGame.click(numberGame);
+
 </script>
 
 <div class="hint">
